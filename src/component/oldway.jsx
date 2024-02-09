@@ -6,7 +6,7 @@ const OldWay = () => {
   const [data, setData] = useState()
   
   useEffect(() => {
-    fetch('http://localhost:8080/posts').then((res) => res.json()).then((data) => setData(data));
+    fetch('https://render-backend-swr.onrender.com/posts').then((res) => res.json()).then((data) => setData(data));
   },[])
   if (!data) {
   return <div>Loading......</div>
